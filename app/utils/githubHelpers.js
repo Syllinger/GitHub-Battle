@@ -10,6 +10,25 @@ function getUserInfo(username) {
   return axios.get('https://api.github.com/users/' + username + param);
 }
 
+function getRepos(username) {
+  // Fetch username repos
+}
+
+function getTotalStars (stars) {
+  // Calculate all of the stars that the user has
+}
+
+function getPlayerData (player) {
+  // Get repos
+  // Get total stars
+  // Return object with that data
+}
+
+function calculateScores (Players) {
+  // Implement algorithm to determine winner
+  // Return array with scores
+}
+
 var helpers = {
   getPlayersInfo: function(players) {
     return axios.all(players.map(function(username) {
@@ -21,6 +40,9 @@ var helpers = {
     }).catch(function(err) {
       console.warn('Error in getPlayersInfo', err)
     });
+  },
+  battle: function(players) {
+
   }
 };
 
