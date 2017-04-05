@@ -4,7 +4,7 @@ var Prompt = require('../components/Prompt');
 
 var PromptContainer = React.createClass({
   contextTypes: {
-    router: React.PropTypes.object.isRequired,
+    router: React.PropTypes.object.isRequired
   },
   getInitialState: function() {
     return {
