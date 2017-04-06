@@ -58,10 +58,6 @@ var helpers = {
     var playerTwoData = getPlayerData(players[1]);
 
     return axios.all([playerOneData, playerTwoData])
-      .then(function(playerData) {
-        console.log(playerData)
-        return playerData
-      })
       .then(calculateScores)
       .catch(function(err) {console.warn('Error in getPlayersInfo: ', err)});
   }
