@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactRouter = require('react-router');
 
+var Loading = require('./Loading');
 var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
 var MainContainer = require('./MainContainer');
@@ -23,7 +24,7 @@ function StartOverButton() {
 function Results(props) {
   if (props.isLoading) {
     return (
-      <p> LOADING </p>
+      <Loading speed={100} text='Waiting' />
     );
   }
 
